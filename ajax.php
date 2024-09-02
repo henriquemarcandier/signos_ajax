@@ -28,7 +28,7 @@ else{
     <div class="body2 container">
         <h1><?=$nomeSigno?></h1>
         <p><?=$descricao?></p>
-        <p><a onclick="$('#data_nascimento').val(''); $('#signo-form').submit();" style="cursor:pointer">Limpar Campo</a></p>
+        <p><a class="btn btn-danger" onclick="$('#data_nascimento').val(''); $('#signo-form').submit();" style="cursor:pointer">Limpar Campo</a></p>
     </div>
 <?php 
 }
