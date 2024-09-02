@@ -1,6 +1,6 @@
 <?php
 if (!$_POST['data_nascimento']){
-    echo "1|-|Informe a sua data de nascimento corretamente!";
+    echo "1|-|<hr>Informe a sua data de nascimento corretamente!";
 }
 else{
     $dataConfere = date('m-d', strtotime($_POST['data_nascimento']));
@@ -24,8 +24,12 @@ else{
             }
         }
     ?>
-    1|-|<h1><?=$nomeSigno?></h1>
-<p><?=$descricao?></p>
+    1|-|<hr>
+    <div class="body2 container">
+        <h1><?=$nomeSigno?></h1>
+        <p><?=$descricao?></p>
+        <p><a onclick="$('#data_nascimento').val(''); $('#signo-form').submit();" style="cursor:pointer">Limpar Campo</a></p>
+    </div>
 <?php 
 }
 ?>
