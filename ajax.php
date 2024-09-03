@@ -27,7 +27,7 @@ else{
     1|-|<hr>
     <div class="body2 container">
         <h1><?=$nomeSigno?></h1>
-        <p><?=$descricao?></p>
+        <p style="text-align: justify"><?=$descricao?></p>
         <p><a class="btn btn-danger" onclick="$('#data_nascimento').val(''); $('#signo-form').submit();" style="cursor:pointer">Limpar Campo</a></p>
     </div>
 <?php 
